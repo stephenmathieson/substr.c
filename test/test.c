@@ -28,5 +28,5 @@ int main(int argc, char **argv) {
       assert_str_not_equal(foo, res);
     });
   });
-  return 0;
+  return assert_failures();
 }
