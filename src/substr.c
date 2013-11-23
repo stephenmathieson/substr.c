@@ -24,6 +24,7 @@ char *substr(const char *str, int start, int end) {
   if (len + 1 < end) return NULL;
 
   char *res = malloc(sizeof(char) * diff + 1);
+  if (NULL == res) return NULL;
   memset(res, '\0', diff + 1);
   strncpy(res, str + start, diff);
   return res;
