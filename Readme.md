@@ -11,7 +11,7 @@
 
 ## API
 
-### `char *substr(char *str, int start, int end)`
+### `char *substr(const char *str, int start, int end)`
 
   Get a substring of `str` from `start` to `end`
 
