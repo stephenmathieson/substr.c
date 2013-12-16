@@ -8,6 +8,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include "str-copy.h"
 #include "substr.h"
 
 /*
@@ -19,7 +20,7 @@ char *substr(const char *str, int start, int end) {
   if (end <= start) return NULL;
   int len = strlen(str);
   int diff = end - start;
-  if (len == diff) return strdup(str);
+  if (len == diff) return str_copy(str);
   if (len < start) return NULL;
   if (len + 1 < end) return NULL;
 

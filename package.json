@@ -7,6 +7,11 @@
   "license": "MIT",
   "src": [
     "src/substr.c",
-    "src/substr.h"
-  ]
+    "src/substr.h",
+    "deps/str-copy.c",
+    "deps/str-copy.h"
+  ],
+  "dependencies": {
+    "stephenmathieson/str-copy.c": "0.0.3"
+  }
 }

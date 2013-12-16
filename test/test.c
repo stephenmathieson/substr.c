@@ -1,6 +1,6 @@
 
 #include "describe.h"
-#include "../src/substr.h"
+#include "substr.h"
 
 int main(int argc, char **argv) {
   describe("substr", {

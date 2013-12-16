@@ -7,9 +7,9 @@
 //
 
 
-#ifndef __SUBSTR__
-#define __SUBSTR__ 1
+#ifndef SUBSTR_H
+#define SUBSTR_H 1
 
-char *substr(const char *str, int start, int end);
+char *substr(const char *, int, int);
 
 #endif
