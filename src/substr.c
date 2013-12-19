@@ -17,8 +17,10 @@
 
 char *substr(const char *str, int start, int end) {
   if (0 > start) return NULL;
-  if (end <= start) return NULL;
   int len = strlen(str);
+  // -1 == length of string
+  if (-1 == end) end = len;
+  if (end <= start) return NULL;
   int diff = end - start;
   if (len == diff) return str_copy(str);
   if (len < start) return NULL;

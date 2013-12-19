@@ -13,7 +13,7 @@
 
 ### `char *substr(const char *str, int start, int end)`
 
-  Get a substring of `str` from `start` to `end`
+  Get a substring of `str` from `start` to `end`.  If `end` is -1, will use the length of the given `str`.
 
 ## License
 
